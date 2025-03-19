@@ -1,0 +1,128 @@
+/**{  This code is for taking four div in a row
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 80px;
+    padding: 30px;
+}
+
+.container {
+    display: flex;         /* Enables flexbox layout 
+    justify-content: space-between; Distributes space evenly between the items
+  } 
+.box {
+    width: 300px; Adjust width based on the desired size
+    height: 300px;
+    background: url(./Images/1.jpeg);
+    text-align: center;
+    justify-content: center; 
+
+  }
+*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.main > .pain{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    margin: auto;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    position: relative;
+
+}
+
+.main > .pain > .rain{
+    width: max-content;
+    padding: 0 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    line-height: 30px;
+    text-emphasis: non;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 86%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    clip-path: polygon(0 40px, 40px 0, calc(100% - 40px) 0, calc(100% - 0px) 40px);
+
+}
+ */
+
+
+ body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  @media (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-item {
+      width: 80%;
+    }
+  }
+    
